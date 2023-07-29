@@ -33,6 +33,9 @@
           </div>
         </div>
       </main>
+      <p class="copyright">Published by
+        <a href="https://github.com/Sujon-Ahmed" target="_blank">Sujon Ahmed</a>
+      </p>
     </div>
   </div>
 </template>
@@ -109,20 +112,23 @@ export default {
 
 body {
   font-family: "montserrat", sans-serif;
-  
-  background: #8E2DE2;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .container {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
+  margin-top: 20px;
   border-radius: 16px;
 }
 
@@ -134,7 +140,7 @@ background: linear-gradient(to left, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Fi
   background-position: bottom;
   transition: 0.4s;
   border-radius: 16px;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3)
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 #app.warm {
@@ -218,5 +224,21 @@ main {
   font-weight: 700;
   font-style: italic;
   text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+}
+.copyright {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.copyright a {
+  color: #fff;
+  text-decoration: none;
+}
+.copyright a:hover {
+  color: #000;
 }
 </style>
