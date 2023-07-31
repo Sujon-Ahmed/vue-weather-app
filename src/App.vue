@@ -33,7 +33,8 @@
           </div>
         </div>
       </main>
-      <p class="copyright">Published by
+      <p class="copyright">
+        Published by
         <a href="https://github.com/Sujon-Ahmed" target="_blank">Sujon Ahmed</a>
       </p>
     </div>
